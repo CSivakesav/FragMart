@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login | FragMart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-title">Login to FragMart</div>
+        <form class="login-form" id="loginForm" autocomplete="off">
+            <div class="login-error" id="loginError" style="display:none;"></div>
+            <label for="username">Username</label>
+            <input type="text" id="username" required autocomplete="username">
+            <label for="password">Password</label>
+            <input type="password" id="password" required autocomplete="current-password">
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <script src="Js/login.js"></script>
+</body>
+</html>

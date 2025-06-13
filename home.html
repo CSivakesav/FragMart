@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FragMart</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="icons/nadeicon.png">
+</head>
+<body>
+    <div id="loader">
+        <div class="weapon-loader">
+            <img src="images/ak47.jpg" alt="Loading..." class="weapon-loader-img">
+            <div class="weapon-loader-text">Loading your arsenal...</div>
+        </div>
+    </div>
+    <div class="main-layout">
+        <div class="sidebar">
+            <nav class="navbar">
+                <ul>
+                    <img src="images/icon.png" alt="FragMart Logo" class="logo">
+                    <li>
+                        <a href="bundles.html">
+                            <img src="icons/bundle.png" alt="" class="icon icon-default">
+                            <img src="icons/bundlehover.png" alt="" class="icon icon-hover">
+                            Bundles
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cat.html">
+                            <img src="icons/cart.png" alt="" class="icon icon-default">
+                            <img src="icons/carthover.png" alt="" class="icon icon-hover">
+                            Cart
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#pistols">
+                            <img src="icons/pistol.png" alt="" class="icon icon-default">
+                            <img src="icons/pistolhover.png" alt="" class="icon icon-hover">
+                            Pistols
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#smgs">
+                            <img src="icons/smg.png" alt="" class="icon icon-default">
+                            <img src="icons/smghover.png" alt="" class="icon icon-hover">
+                            SMGs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#rifles">
+                            <img src="icons/rifle.png" alt="" class="icon icon-default">
+                            <img src="icons/riflehover.png" alt="" class="icon icon-hover">
+                            Rifles
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#snipers">
+                            <img src="icons/sniper.png" alt="" class="icon icon-default">
+                            <img src="icons/sniperhover.png" alt="" class="icon icon-hover">
+                            Snipers
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#heavy">
+                            <img src="icons/heavy.png" alt="" class="icon icon-default">
+                            <img src="icons/heavyhover.png" alt="" class="icon icon-hover">
+                            Heavy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#knives">
+                            <img src="icons/knife.png" alt="" class="icon icon-default">
+                            <img src="icons/knifehover.png" alt="" class="icon icon-hover">
+                            Knives
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="icons/info.png" alt="" class="icon icon-default">
+                            <img src="icons/infohover.png" alt="" class="icon icon-hover">
+                            Info
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-content">
+            <!-- Search bar at the top of main content -->
+            <form id="search-bar">
+                <input type="text" placeholder="Search weapons..." />
+                <button type="submit">Search</button>
+            </form>
+            <div id="search-results" style="display:none;"></div>
+            <div id="pistols">
+                <div class="section-title">Pistols</div>
+                <div class="weapon-scroll">
+                    <div class="weapon-card">
+                        <img src="images/Glock-18.jpg" alt="Glock-18">
+                        <h3>Glock-18</h3>
+                        <p>Pistol &bull; $1,500</p>
+                        <button data-name="Glock-18" data-price="1500">Add to Cart</button>
+                    </div>
+                    <div class="weapon-card">
+                        <img src="images/USP-S.jpg" alt="USP-S">
+                        <h3>USP-S</h3>
+                        <p>Pistol &bull; $2,000</p>
+                        <button data-name="USP-S" data-price="2000">Add to Cart</button>
+                    </div>
+                    <div class="weapon-card">
+                        <img src="images/DE.jpg" alt="Desert Eagle">
+                        <h3>Desert Eagle</h3>
+                        <p>Pistol &bull; $3,500</p>
+                        <button data-name="Desert Eagle" data-price="3500">Add to Cart</button>
+                    </div>
+                    <div class="weapon-card">
+                        <img src="images/p250.jpg" alt="P250">
+                        <h3>P250</h3>
+                        <p>Pistol &bull; $1,200</p>
+                        <button data-name="P250" data-price="1200">Add to Cart</button>
+                    </div>
+                    <div class="weapon-card">
+                        <img src="images/DB.jpg" alt="Dual Berettas">
+                        <h3>Dual Berettas</h3>
+                        <p>Pistol &bull; $1,800</p>
+                        <button data-name="Dual Berettas" data-price="1800">Add to Cart</button>
+                    </div>
+                    <div class="weapon-card">
+                        <img src="images/CZ75.jpg" alt="CZ75-Auto">
+                        <h3>CZ75-Auto</h3>
+                        <p>Pistol &bull; $2,200</p>
+                        <button data-name="CZ75-Auto" data-price="2200">Add to Cart</button>
+                    </div>
+                    <div class="weapon-card">
+                        <img src="images/57.jpg" alt="Five-SeveN">
+                        <h3>Five-SeveN</h3>
+                        <p>Pistol &bull; $2,500</p>
+                        <button data-name="Five-SeveN" data-price="2500">Add to Cart</button>
+                    </div>
+                    <div class="weapon-card">
+                        <img src="images/tec9.jpg" alt="Tec-9">
+                        <h3>Tec-9</h3>
+                        <p>Pistol &bull; $2,000</p>
+                        <button data-name="Tec-9" data-price="2000">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div id="smgs">
+                <div class="section-title">SMGs</div>
+                <div class="weapon-scroll">
+                    <div class="weapon-card">
+                        <img src="images/mp9.jpg" alt="MP9">
+                        <h3>MP9</h3>
+                        <p>SMG &bull; $3,200</p>
+                        <button data-name="MP9" data-price="3200">Add to Cart</button>
+                    </div>
+                    <div class="weapon-card">
+                        <img src="images/mac-10.jpg" alt="MAC-10">
+                        <h3>MAC-10</h3>
+                        <p>SMG &bull; $3,000</p>
+                        <button data-name="MAC-10" data-price="3000">Add to Cart</button>
+                    </div>
+                    <div class="weapon-card">
+                        <img src="images/mp7.jpg" alt="MP7">
+                        <h3>MP7</h3>
+                        <p>SMG &bull; $3,500</p>
+                        <button data-name="MP7" data-price="3500">Add to Cart</button>
+                    </div>
+                    <div class="weapon-card">
+                        <img src="images/ump.jpg" alt="UMP-45">
+                        <h3>UMP-45</h3>
+                        <p>SMG &bull; $3,800</p>
+                        <button data-name="UMP-45" data-price="3800">Add to Cart</button>
+                    </div>
+                    <div class="weapon-card">
+                        <img src="images/p90.jpg" alt="P90">
+                        <h3>P90</h3>
+                        <p>SMG &bull; $4,500</p>
+                        <button data-name="P90" data-price="4500">Add to Cart</button>
+                    </div>
+                    <div class="weapon-card">
+                        <img src="images/pp.jpg" alt="PP-Bizon">
+                        <h3>PP-Bizon</h3>
+                        <p>SMG &bull; $2,800</p>
+                        <button data-name="PP-Bizon" data-price="2800">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div id="rifles">
+                <div class="section-title">Rifles</div>
+                <div class="weapon-scroll">
+                    <div class="weapon-card">
+                        <img src="images/famas.jpg" alt="FAMAS">
+                        <h3>FAMAS</h3>
+                        <p>Rifle &bull; $6,000</p>
+                        <button data-name="FAMAS" data-price="6000">Add to Cart</button>
+                    </div>
+                    <div class="weapon-card">
+                        <img src="images/galil.jpg" alt="Galil AR">
+                        <h3>Galil AR</h3>
+                        <p>Rifle &bull; $5,500</p>
+                        <button data-name="Galil AR" data-price="5500">Add to Cart</button>
+                    </div>
+                    <div class="weapon-card">
+                        <img src="images/m4a4.jpg" alt="M4A4">
+                        <h3>M4A4</h3>
+                        <p>Rifle &bull; $9,000</p>
+                        <button data-name="M4A4" data-price="9000">Add to Cart</button>
+                    </div>
+                    <div class="weapon-card">
+                        <img src="images/m4a1.jpg" alt="M4A1-S">
+                        <h3>M4A1-S</h3>
+                        <p>Rifle &bull; $9,000</p>
+                        <button data-name="M4A1-S" data-price="9000">Add to Cart</button>
+                    </div>
+                    <div class="weapon-card">
+                        <img src="images/ak47.jpg" alt="AK-47">
+                        <h3>AK-47</h3>
+                        <p>Rifle &bull; $9,500</p>
+                        <button data-name="AK-47" data-price="9500">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div id="snipers">
+                <div class="section-title">Sniper Rifles</div>
+                <div class="weapon-scroll">
+                    <div class="weapon-card">
+                        <img src="images/ssg.jpg" alt="SSG 08">
+                        <h3>SSG 08</h3>
+                        <p>Sniper Rifle &bull; $4,500</p>
+                        <button data-name="SSG 08" data-price="4500">Add to Cart</button>
+                    </div>
+                    <div class="weapon-card">
+                        <img src="images/awp.jpg" alt="AWP">
+                        <h3>AWP</h3>
+                        <p>Sniper Rifle &bull; $12,000</p>
+                        <button data-name="AWP" data-price="12000">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div id="heavy">
+                <div class="section-title">Heavy Weapons</div>
+                <div class="weapon-scroll">
+                    <div class="weapon-card">
+                        <img src="images/nova.jpg" alt="Nova">
+                        <h3>Nova</h3>
+                        <p>Heavy Weapon &bull; $2,000</p>
+                        <button data-name="Nova" data-price="2000">Add to Cart</button>
+                    </div>
+                    <div class="weapon-card">
+                        <img src="images/xm.jpg" alt="XM1014">
+                        <h3>XM1014</h3>
+                        <p>Heavy Weapon &bull; $3,000</p>
+                        <button data-name="XM1014" data-price="3000">Add to Cart</button>
+                    </div>
+                    <div class="weapon-card">
+                        <img src="images/mag7.jpg" alt="MAG-7">
+                        <h3>MAG-7</h3>
+                        <p>Heavy Weapon &bull; $3,500</p>
+                        <button data-name="MAG-7" data-price="3500">Add to Cart</button>
+                    </div>
+                    <div class="weapon-card">
+                        <img src="images/m249.jpg" alt="M249">
+                        <h3>M249</h3>
+                        <p>Heavy Weapon &bull; $5,000</p>
+                        <button data-name="M249" data-price="5000">Add to Cart</button>
+                    </div>
+                    <div class="weapon-card">
+                        <img src="images/negev.jpg" alt="Negev">
+                        <h3>Negev</h3>
+                        <p>Heavy Weapon &bull; $4,800</p>
+                        <button data-name="Negev" data-price="4800">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div id="knives">
+                <div class="section-title">Knives</div>
+                <div class="weapon-scroll">
+                    <div class="weapon-card">
+                        <img src="images/dknife.jpg" alt="Default Knife">
+                        <h3>Default Knife</h3>
+                        <p>Knife &bull; $1,000</p>
+                        <button data-name="Default Knife" data-price="1000">Add to Cart</button>
+                    </div>
+                    <div class="weapon-card">
+                        <img src="images/tacknife.jpg" alt="Tactical Knife">
+                        <h3>Tactical Knife</h3>
+                        <p>Knife &bull; $2,000</p>
+                        <button data-name="Tactical Knife" data-price="2000">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div id="Throwables">
+                <div class="section-title">Throwables</div>
+                <div class="weapon-scroll">
+                    <div class="weapon-card">
+                    <img src="images/he.jpg" alt="HE Grenade">
+                    <h3>HE Grenade</h3>
+                    <p>Grenade &bull; $300</p>
+                    <button data-name="HE Grenade" data-price="300">Add to Cart</button>
+                    </div>
+                    <div class="weapon-card">
+                    <img src="images/flash.jpg" alt="Flashbang">
+                    <h3>Flashbang</h3>
+                    <p>Grenade &bull; $200</p>
+                    <button data-name="Flashbang" data-price="200">Add to Cart</button>
+                    </div>
+                    <div class="weapon-card">
+                    <img src="images/smoke.jpg" alt="Smoke Grenade">
+                    <h3>Smoke Grenade</h3>
+                    <p>Grenade &bull; $300</p>
+                    <button data-name="Smoke Grenade" data-price="300">Add to Cart</button>
+                    </div>
+                    <div class="weapon-card">
+                    <img src="images/molotov.jpg" alt="Molotov Cocktail">
+                    <h3>Molotov Cocktail</h3>
+                    <p>Grenade &bull; $400</p>
+                    <button data-name="Molotov Cocktail" data-price="400">Add to Cart</button>
+                    </div>
+                    <div class="weapon-card">
+                    <img src="images/incendiary.jpg" alt="Incendiary">
+                    <h3>Incendiary</h3>
+                    <p>Grenade &bull; $400</p>
+                    <button data-name="Incendiary" data-price="400">Add to Cart</button>
+                    </div>
+                    <div class="weapon-card">
+                    <img src="images/decoy.jpg" alt="Decoy Grenade">
+                    <h3>Decoy Grenade</h3>
+                    <p>Grenade &bull; $150</p>
+                    <button data-name="Decoy Grenade" data-price="150">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div id="armor-equipment">
+                <div class="section-title">Armor & Equipment</div>
+                <div class="weapon-scroll">
+                    <div class="weapon-card">
+                        <img src="images/vest.jpg" alt="Kevlar Vest">
+                        <h3>Kevlar Vest</h3>
+                        <p>Armor &bull; $600</p>
+                        <button data-name="Kevlar Vest" data-price="600">Add to Cart</button>
+                    </div>
+                    <div class="weapon-card">
+                        <img src="images/kevlar+helmet.jpg" alt="Kevlar + Helmet">
+                        <h3>Kevlar + Helmet</h3>
+                        <p>Armor &bull; $1,000</p>
+                        <button data-name="Kevlar + Helmet" data-price="1000">Add to Cart</button>
+                    </div>
+                    <div class="weapon-card">
+                        <img src="images/kit.jpg" alt="Defuse Kit">
+                        <h3>Defuse Kit</h3>
+                        <p>Equipment (CT) &bull; $500</p>
+                        <button data-name="Defuse Kit" data-price="500">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Js/cat.js"></script>
+    <script src="Js/search.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+            // Fade out loader after a delay for effect
+            setTimeout(function() {
+                const loader = document.getElementById('loader');
+                loader.style.transition = 'opacity 0.7s cubic-bezier(.68,-0.55,.27,1.55)';
+                loader.style.opacity = '0';
+                setTimeout(function() {
+                    loader.style.display = 'none';
+                }, 700);
+            }, 1200); // Show loader for at least 1.2s
+        });
+    </script>
+</body>
+</html>

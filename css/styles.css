@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #181a1b;
+    color: #f3f3f3;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+}
+
+/* Only keep global/shared styles here. Remove all code now present in index.css, cat.css, bundles.css, and login.css. */
+
+/* ...add any truly global utility classes or resets here if needed... */
+
+/* Remove all navbar, card, cart, login, and page-specific styles now in their respective CSS files. */
+
+
